@@ -1,5 +1,6 @@
 //
-// Angular 1.5x Controller using best practices as established @ https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md
+// Angular 1.5x Controller using best practices as established 
+// @ https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md
 //
 // Controller is coded in a "fat model skinny controller" style
 // Compiles data from various APIs into local variables and uses $scope.$emit to control data flow  
