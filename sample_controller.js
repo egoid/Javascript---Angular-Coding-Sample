@@ -278,10 +278,7 @@
           break;
       };
     };
-    function display_no_msg_alert() {
-      $(".loader").hide();
-      $(".company_name").show();
-    };
+
 
 
   };
