@@ -9,10 +9,10 @@
 
   "use strict";
 
-  var EmployerInboxCtrl;
-  EmployerInboxCtrl.$inject=['CURRENT_USER', 'dashboardFactory' ,'gaService', 'localStorageManager', '$http', '$log', '$state','inboxService','employeeService','employerService','applicantsService','$scope','utilityService'];
+  var controller;
+  controller.$inject=['CURRENT_USER', 'dashboardFactory' ,'gaService', 'localStorageManager', '$http', '$log', '$state','inboxService','employeeService','employerService','applicantsService','$scope','utilityService'];
 
-  function EmployerInboxCtrl(CURRENT_USER, dashboardFactory, gaService, localStorageManager, $http, $log, $state, inboxService, employeeService, employerService, applicantsService, $scope, utilityService) {
+  function controller(CURRENT_USER, dashboardFactory, gaService, localStorageManager, $http, $log, $state, inboxService, employeeService, employerService, applicantsService, $scope, utilityService) {
   
     var vm = this;
     
@@ -254,44 +254,13 @@
     };
 
 
-    function switch_status(string) {
-      switch(string) {
-        case 'pass':
-          return'Pending'
-          break;
-        case 'contacted':
-          return'Phone Screen'
-          break;
-        case 'contacted_interview_one':
-          return'In Person Interview'
-          break;            
-        case 'contacted_interview_two':
-          return'Interview #2'
-          break;
-        case 'interviewed':
-          return'Reference Check'
-          break;
-        case 'background_check':
-          return'Background Check'
-          break;
-        case 'makingoffer':
-          return'Offer Extended'
-          break;
-        case 'hired':
-          return'Hired'
-          break;   
-        case 'favorited':
-          return'Saved Applicants';
-          break;
-      };
-    };
 
 
 
   };
 
 
-  module.controller('EmployerInboxCtrl', EmployerInboxCtrl);
+  module.controller('controller', controller);
 
 
-})(angular.module('Yobs.Controllers'));
+})(angular.module('Controllers'));
