@@ -1,3 +1,7 @@
+//
+//  Basic NodeJS Routing and MySQL queries to DB
+//
+
 'use strict';
 
 const _ = require('lodash');
